@@ -10,7 +10,7 @@ for root in $ANDROID_HOME $ANDROID_SDK_ROOT $HOME/Android/Sdk $HOME/Library/Andr
         set paths $paths $bin
       end
     end
-    # if we added at least one path, let's add them to the real PATH set ANDROID_HOME and finish
+    # if we added at least one path, let's add them to the real PATH, set ANDROID_HOME and finish
     if set -q paths[1]
       set -gx PATH $PATH $paths
       set -gx ANDROID_HOME $root
